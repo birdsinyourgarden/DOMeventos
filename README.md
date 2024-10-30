@@ -77,7 +77,8 @@ Un árbol DOM es una estructura de árbol cuyos nodos representan el contenido d
 
 Tiene un árbol DOM que se ve así:
 
-![Árbol DOM](img/dom_tree.png)
+<img width="872" alt="dom_tree" src="https://github.com/user-attachments/assets/8519bf1b-7aad-46e4-aa60-77386f7dee49">
+
 
 Aunque el árbol anterior es similar al árbol DOM del documento, no es idéntico, ya que [el árbol DOM real conserva el espacio en blanco](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace).
 
