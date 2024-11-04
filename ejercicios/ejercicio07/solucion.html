@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7: Cambio de Atributos con `setAttribute`</title>
+  </head>
+  <body>
+    <div id="miElemento">Elemento ocn atributo</div>
+    <button id="cambiarAtributo">cambiarAtributo</button>
+    <script>
+      document.getElementById('cambiarAtributo').addEventListener('click', () => 
+      {
+        const elemento = document.getElementById('miElemento');
+        elemento.setAttribute('dato-nuevo', 'valor');
+        const nuevoValor = elemento.getAttribute('dato-nuevo');
+        elemento.textContent = `Elemento con atributo (dato-nuevo: ${nuevoValor})`;
+      });
+    </script>
+  </body>
+</html>

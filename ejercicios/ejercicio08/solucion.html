@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8: Cambio de Estilos con `style`</title>
+  </head>
+  <body>
+    <div id="miElemento" style="padding: 20px; border: 1px solid black;">Elementos con estilos</div>
+    <button id="cambiarEstilos">Cambiar estilos</button>
+
+    <script>
+      document.getElementById('cambiarEstilos').addEventListener('click', () => 
+      {
+        const elemento = document.getElementById('miElemento');
+
+        elemento.style.background = 'blue';
+        elemento.style.color = 'white';
+        elemento.style.background = 'blue';
+        elemento.style.textAlign = 'center';
+      });
+    </script>
+  </body>
+</html>

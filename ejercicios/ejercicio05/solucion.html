@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5: Cambio de Contenido con `textContent`</title>
+  </head>
+  <body>
+    <p id="parrafo1">Primer párrafo.</p>
+    <p id="parrafo2">Segundo párrafo.</p>
+    <p id="parrafo3">Tercer párrafo.</p>
+    <button id="cambiarTexto">Cambiar texto</button>
+    <script>
+      document.getElementById('cambiarTexto').addEventListener('click', () => {
+        const parrafo1 = document.getElementById('parrafo1');
+        const parrafo2 = document.getElementById('parrafo2');
+        const parrafo3 = document.getElementById('parrafo3');
+
+        parrafo1.textContent = 'hola';
+        parrafo2.textContent = 'mundo';
+        parrafo3.textContent = 'javaScript';
+      })
+    </script>
+  </body>
+</html>

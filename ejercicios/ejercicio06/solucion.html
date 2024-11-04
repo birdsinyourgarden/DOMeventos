@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6: Cambio de Contenido con `innerHTML`</title>
+  </head>
+  <body>
+    <div id="miElemento">Hola mundo</div>
+    <button id="cambiarTexto">Cambiar contenido</button>
+    <script>
+      document.getElementById('cambiarTexto').addEventListener('click', () => {
+        const elemento = document.getElementById('miElemento');
+        elemento.innerHTML = 'Me gusta JavaScript';
+      })
+    </script>
+  </body>
+</html>

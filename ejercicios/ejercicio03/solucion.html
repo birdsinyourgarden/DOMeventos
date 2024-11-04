@@ -6,10 +6,10 @@
     <title>Ejercicio 3: Selección de Elementos con `querySelector`</title>
   </head>
   <body>
-    
-
+    <input type="text" id="miInput" value="valor inicial" />
     <script>
-      // Escribe tu codigo javascript aqui
+        const inputElement = document.querySelector('input[type="text"]');
+        inputElement.value = 'Nuevo valor';    
     </script>
   </body>
 </html>

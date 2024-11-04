@@ -6,10 +6,14 @@
     <title>Ejercicio 2: Selección de Elementos por Clase</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
-
+      <div class="claseEspecifica">Elemento 1</div>
+      <div class="claseEspecifica">Elemento 2</div>
+      <div class="claseEspecifica">Elemento 3</div>
     <script>
-      // Escribe tu codigo javascript aqui
+      const elementos = document.getElementsByClassName('claseEspecifica');
+      for (let i = 0; i < elementos.length; i++) {
+        elementos[i].style.backgroundColor = 'blue';
+      }
     </script>
   </body>
 </html>
